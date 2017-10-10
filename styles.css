@@ -1,0 +1,185 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#tabs-container{
+    width: 100%;
+    // background-image: url('img/escheresque_ste.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0.45)), url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 600px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.tabs-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -1px;
+    padding-top: 15px;
+}
+
+.tabs-menu li {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 10px;
+    background-color: #ccc;
+    border-top: 1px solid #d4d4d1;
+    border-right: 1px solid #d4d4d1;
+    border-left: 1px solid #d4d4d1;
+    list-style-type: none;
+}
+
+.tabs-menu li.current {
+    position: relative;
+    background-color: tra;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+}
+
+.tabs-menu li a {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none; 
+}
+
+.tabs-menu .current a {
+    color: #2e7da3;
+}
+
+.tab {
+    width: 100%;
+}
+
+.tab-content {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: none;
+}
+
+.listServices__item{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    list-style-type: none;
+}
+
+
+#tab-1 {
+ display: block;   
+}
+
+.rectangle-list{
+    counter-reset: li;
+}
+
+
+.rectangle-list li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;   
+}
+ 
+.rectangle-list li:hover {
+    background: #42f4aa;
+}   
+ 
+.rectangle-list li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.rectangle-list li:after {
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;               
+}
+ 
+.rectangle-list li:hover:after {
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+
+
+.phone-pic{
+    width: 25px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.vk-icon{
+    width: 25px;
+    height: auto;
+}
+
+.vk__link{
+    margin-top: 15px;
+}
+
+.contact__wraper{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.phone__wraper{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-img__wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phoneNumber{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
