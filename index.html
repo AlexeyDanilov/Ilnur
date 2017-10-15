@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="pater/pater.css" />
 	<link href="https://fonts.googleapis.com/css?family=Pangolin&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	 <link rel="stylesheet" href="dist/css/swiper.min.css">
 
 </head>
 <body>
@@ -29,17 +30,69 @@
 	    <div class="tab">
 	        <div id="tab-1" class="tab-content">
 	        	<ol class="listServices rectangle-list">
-	        		<li class="listServices__item">Позиция 1</li>
-	        		<li class="listServices__item">Позиция 2</li>
-	        		<li class="listServices__item">Позиция 3</li>
-	        		<li class="listServices__item">Позиция 4</li>
-	        		<li class="listServices__item">Позиция 5</li>
+	        		<li class="listServices__item">
+	        			<div class="short">Гипсокартонные работы<img src="img/arrow.png" alt="" class="arrow"></div>
+	        			<p class="detail">стены, потолки, короб, перегородки, ниши, арки</p>
+	        		</li>
+
+	        		<li class="listServices__item">
+	        			<div class="short">Укладка напольных покрытий<img src="img/arrow.png" alt="" class="arrow"></div>
+						<p class="detail">линолеум, ламинат, ковролин</p>
+	        		</li>
+
+	        		<li class="listServices__item">
+	        			<div class="short">Потолки<img src="img/arrow.png" alt="" class="arrow"></div>
+						<p class="detail">армстронг, ПВХ, ГКЛ</p>			
+	        		</li>
+
+	        		<li class="listServices__item">
+	        			<div class="short">Отделочные работы<img src="img/arrow.png" alt="" class="arrow"></div>
+						<p class="detail">укладка декоративной плитки, шпаклёвка стен, покраска, поклейка обоев</p>	
+	        		</li>
+
+	        		<li class="listServices__item">
+	        			<div class="short">Электромонтаж</div>
+	        		</li>
+
+	        		<li class="listServices__item">
+	        			<div class="short">Сантехника</div>
+	        		</li>
 	        	</ol>
 	        </div>
 	        <div id="tab-2" class="tab-content">
-	        	<p class='p'>
-	        		Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
-	        	</p>
+	        	<div class="clients">
+	        		<div class="clients__item">
+	        			<a href="http://cafe-sady.ru/" class="clients-link" target="_blank">
+	        				<img src="img/sady.jpg" alt="" class="clients__item-logo">
+	        			</a>
+	        		</div>
+
+	        		<div class="clients__item">
+	        			<a href="http://mirinkub.ru/" class="clients-link" target="_blank">
+	        				<img src="img/mirinkub.png" alt="" class="clients__item-logo">
+	        			</a>
+	        		</div>
+
+	        		<div class="clients__item">
+	        			<a href="http://sedmoy-pol.ru/" class="clients-link" target="_blank">
+	        				<img src="img/pol.jpg" alt="" class="clients__item-logo">
+	        			</a>
+	        		</div>
+	        	</div>
+
+	        	<div class="swiper-container jobs-container">
+				    <div class="swiper-wrapper">
+					    <div class="swiper-slide"><img src="img/jobs/1.jpg" alt=""></div>
+					    <div class="swiper-slide"><img src="img/jobs/2.jpg" alt=""></div>
+					    <div class="swiper-slide"><img src="img/jobs/3.jpg" alt=""></div>
+					    <div class="swiper-slide"><img src="img/jobs/4.jpg" alt=""></div>
+					    <div class="swiper-slide"><img src="img/jobs/5.jpg" alt=""></div>
+				    </div>
+			
+				    <div class="swiper-button-next"></div>
+				    <div class="swiper-button-prev"></div>
+ 				</div>
+
 	        
 	        </div>
 	        <div id="tab-3" class="tab-content">
@@ -49,9 +102,11 @@
 			        		<img class="phone-pic" src="img/phone.png" alt="">
 			        		<img src="img/WhatsApp.png" alt="">
 		        		</div>
-		        		<span class="phoneNumber">+7(000)000-00-00</span>	
+		        		<span class="phoneNumber">+7(927)403-68-32
+							<span class="city">Республика Татарстан г. Казань</span>
+		        		</span>	
 		        	</div>
-		        	<a class="vk__link" href="https://vk.com"><img class="vk-icon" src="img/vk.png" alt=""></a>
+		        	<a class="vk__link" href="https://vk.com" target="_blank"><img class="vk-icon" src="img/vk.png" alt=""></a>
 		        </div>
 	        </div>
 
@@ -65,5 +120,9 @@
 		<script src="js/anime.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script src="js/demo-ama.js"></script>
+		<script src="dist/js/swiper.jquery.min.js"></script>
+		<script src="dist/js/swiper.min.js"></script>
+		<script src="slider.js"></script>
+		<script src="dist/js/swiper.js"></script>
 </body>
 </html>

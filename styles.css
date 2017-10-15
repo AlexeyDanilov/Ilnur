@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 600px;
+    height: 1000px;
 }
 
 .container{
@@ -73,6 +73,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -183,3 +185,76 @@ body{
     font-weight: 600;
     font-size: 25px;
 }
+
+.city{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 14px; 
+}
+
+.short{
+    position: relative;
+    cursor: pointer;
+}
+
+.detail{
+    display: none;
+    color: black;
+    font-weight: bold;
+}
+
+.arrow{
+    position: absolute;
+    right: 19px;
+    top: 5px;
+    width: 10px;
+    height: auto;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients__item{
+    width: 25%;
+}
+
+.clients-link{
+    width: 100%;
+}
+
+.clients__item-logo{
+    width: 100%;
+    height: auto;
+}
+
+.jobs-container{
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+// .swiper-wrapper{
+//     width: 100%;
+//     height: auto;
+// }
+
+// .swiper-slide{
+//     width: 100%;
+//     height: auto;
+// }
+
+.swiper-slide img{
+    max-width: 100%;
+    height: auto;
+}
+
