@@ -6,7 +6,7 @@
 	font-family: 'Pangolin', cursive;
 	font-size: 1.25em;
 	font-weight: 500;
-	margin-bottom: 5em;
+	margin-bottom: 50px;
 	padding-left: 0.5em;
 	color: #32343c;
 	text-decoration: none;
@@ -46,7 +46,7 @@
 }
 
 .menu--ama .menu__item-name {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 500;
 	display: flex;
 	flex-wrap: wrap;

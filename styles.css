@@ -2,16 +2,22 @@
 body{
     padding: 0;
     margin: 0;
-}
-
-#tabs-container{
     width: 100%;
     /*background-image: url('img/escheresque_ste.png');*/
     background-image: linear-gradient(to right, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0.45)), url('img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1000px;
+    padding-bottom: 46%;
+}
+
+#tabs-container{
+    /*width: 100%;*/
+    /*!*background-image: url('img/escheresque_ste.png');*!*/
+    /*background-image: linear-gradient(to right, rgba(0, 0, 255, 0.45), rgba(0, 0, 255, 0.45)), url('img/bg.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
 }
 
 .container{
@@ -184,6 +190,7 @@ body{
     color: white;
     font-weight: 600;
     font-size: 25px;
+    white-space: nowrap;
 }
 
 .city{
@@ -207,7 +214,7 @@ body{
 .arrow{
     position: absolute;
     right: 19px;
-    top: 5px;
+    top: 10%;
     width: 10px;
     height: auto;
 }
@@ -243,16 +250,6 @@ body{
     margin-top: 100px;
 }
 
-/*// .swiper-wrapper{
-//     width: 100%;
-//     height: auto;
-// }
-
-// .swiper-slide{
-//     width: 100%;
-//     height: auto;
-// }*/
-
 .swiper-slide img{
     width: 100%;
     height: auto;
@@ -261,7 +258,7 @@ body{
 
 
 
-@media screen and (max-width: 714px){
+@media (max-width: 714px){
 
     #page-wrapper {
         position: absolute;
@@ -324,6 +321,8 @@ body{
     #box.active {
        right: 0px;
        opacity: 1;
+        width: 80%;
+        height: 100%;
     }
     #items {
         position: relative;
@@ -360,5 +359,75 @@ body{
     }
     #box {
         will-change: transform, opacity;
+    }
+
+    .menu--ama .menu__item-name span{
+        color: black!important;
+    }
+
+    .listServices{
+        margin-top: -16px;
+        padding-top: 30px;
+    }
+
+    .rectangle-list li{
+        margin-bottom: 20px;
+    }
+
+    #tab-2, #tab-3{
+        padding-top: 30px;
+    }
+
+    #tab-2{
+        padding-bottom: 30px;
+    }
+
+    .clients{
+        flex-direction: column;
+    }
+
+    .clients__item{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .jobs-container{
+        margin-top: 0;
+    }
+
+    .contact__wraper{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 486px){
+    .short{
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 451px){
+    .contact__wraper{
+        width: 85%;
+    }
+}
+
+@media (max-width: 411px){
+    .short{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px){
+    .short{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 342px){
+    .short{
+        font-size: 9px;
     }
 }
